@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SignUp from "./SignUp";
 export default function SingIn() {
    
         return (
@@ -38,7 +39,7 @@ export default function SingIn() {
               </button>
             </div>
             <p className="forgot-password text-right">
-              Forgot <a href="#">password?</a>
+              Not an user <a href="/sign-up">Sign Up?</a>
             </p>
           </form>
         )

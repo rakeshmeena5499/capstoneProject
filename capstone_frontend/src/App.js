@@ -1,10 +1,10 @@
-<<<<<<< HEAD
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
+import HomePage from './components/HomePage'
 function App() {
   return (
     <Router>
@@ -12,18 +12,18 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
             <Link className="navbar-brand" to={'/sign-in'}>
-              positronX
+            
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <Link className="nav-link" to={'/sign-in'}>
-                    Sign In
+                    Contact Us
                   </Link>
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={'/sign-up'}>
-                    Sign up
+                    About Us
                   </Link>
                 </li>
               </ul>
@@ -33,7 +33,7 @@ function App() {
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
-              <Route exact path="/" element={<SignIn />} />
+              <Route exact path="/" element={<HomePage />} />
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUp />} />
             </Routes>
@@ -41,24 +41,9 @@ function App() {
         </div>
       </div>
     </Router>
+
+
+
   )
 }
 export default App
-=======
-import { BrowserRoute as Router, Routes, Route} from 'react-router-dom'
-
-export default function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Router>
-          <Routes>
-            
-          </Routes>
-        </Router>
-      </header>
-    </div>
-  );
-}
-
->>>>>>> 2bb9540a313aad878f9b49610bb6dc145c5f80af
