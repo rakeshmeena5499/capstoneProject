@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import SignIn from './components/SignIn'
 import SignUp from './components/SignUp'
 import HomePage from './components/HomePage'
+import AppContainer from './components/AppContainer'
 function App() {
   return (
     <Router>
@@ -33,7 +34,7 @@ function App() {
         <div className="auth-wrapper">
           <div className="auth-inner">
             <Routes>
-              <Route exact path="/" element={<HomePage />} />
+              <Route exact path="/" element={<AppContainer />} />
               <Route exact path="/HomePage" element={<HomePage/>}/>
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUp />} />
