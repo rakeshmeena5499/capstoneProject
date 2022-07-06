@@ -11,7 +11,7 @@ function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <Link className="navbar-brand" to={'/sign-in'}>
+            <Link className="navbar-brand" to={'/HomePage'}>
             
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -34,6 +34,7 @@ function App() {
           <div className="auth-inner">
             <Routes>
               <Route exact path="/" element={<HomePage />} />
+              <Route exact path="/HomePage" element={<HomePage/>}/>
               <Route path="/sign-in" element={<SignIn />} />
               <Route path="/sign-up" element={<SignUp />} />
             </Routes>
