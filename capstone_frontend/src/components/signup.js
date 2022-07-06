@@ -32,7 +32,7 @@ function SignUp() {
   async function postSignUpInfo(inputData) {
     const response = await axios({
       method: "post",
-      url: "/api/v1/users/save",
+      url: "localhost:8080/api/auth/signup",
       data: {
         firstName: inputData.firstName,
         lastName: inputData.lastName,
